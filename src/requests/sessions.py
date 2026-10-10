@@ -494,7 +494,7 @@ class Session(SessionRedirectMixin):
         #: A CookieJar containing all currently outstanding cookies set on this
         #: session. By default it is a
         #: :class:`RequestsCookieJar <requests.cookies.RequestsCookieJar>`, but
-        #: may be any other ``cookielib.CookieJar`` compatible object.
+        #: may be any other ``http.cookiejar.CookieJar`` compatible object.
         self.cookies = cookiejar_from_dict({})
 
         # Default connection adapters.
